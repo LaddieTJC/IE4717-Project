@@ -10,3 +10,6 @@ The main purpose of this project is to design and create a website for making mo
 
 **Server:** PHP and MySQL
 
+## Authors
+
+- [@Laddie](https://www.github.com/LaddieTJC)
