@@ -1,0 +1,112 @@
+:root {
+  --primary-color: #eae3d2;
+  --secondary-color: #607eaa;
+  --first-bar: 20px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* background-position: center center; */
+  background-color: #c9d6df;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #222831;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav li a:hover {
+  background-color: #393e46;
+}
+
+footer {
+  padding-top: 25px;
+  padding-bottom: 20px;
+  background-color: #222831;
+}
+.social {
+  text-align: center;
+  padding-bottom: 15px;
+  color: #4b4c4d;
+}
+.social a {
+  font-size: 24px;
+  color: black;
+  border: 1px solid var(--secondary-color);
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.65;
+  text-decoration: none;
+}
+.social a:hover {
+  opacity: 0.9;
+}
+footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+footer ul li a {
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+footer ul li a:hover {
+  opacity: 0.5;
+}
+footer .copyright {
+  margin-top: 15px;
+  color: white;
+  text-align: center;
+  font-size: 13px;
+}
+/* ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #555;
+}
+
+li {
+  float: left;
+}
+li a {
+  padding: 15px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: aqua;
+}
+li a:hover {
+  background-color: #111;
+} */

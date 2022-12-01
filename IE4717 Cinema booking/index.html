@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EL Cinema</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .container{
+        height:70vh;
+      }
+      .top-container{
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+        margin:20px;
+        margin-top:50px
+      }
+
+      .item{
+        display:flex;
+        flex-direction: column;
+        padding:5px;
+      }
+      img{
+        width:300px;
+        height:200px;
+      }
+      input[type=submit]{
+          padding:5px 25px 5px 25px;
+          width:100%;
+          margin-top:15px;
+          border-radius:30px;
+          background-color:#222831;
+          color:#ffffff;
+          font-size:1.05rem;
+        }
+        input[type=submit]:hover{
+          background-color:#B2B2B2;
+          color:#222831;
+        }
+        .btm-container{
+          /* background-color: red; */
+          display:flex;
+          padding:50px;
+          flex-direction:column;
+          /* justify-content:space-around; */
+          align-items:center;
+        }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.php">Movies</a></li>
+        <li><a href="booking.php">Booking</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="top-container">
+        <h1>EL CINEMA</h1>
+        <div class="item">
+          <div class="thumb">
+            <a class="popup-gmaps" target="_blank" rel="nofollow" href="https://maps.google.com/maps?q=8+Grange+Rd,Cineleisure+Orchard,+Singapore+239695"><img src="img/cineleisure-orchard.jpg"></a>
+          </div>
+          <div class="description">
+          <h3 class="cinema-name">EL @ CINEPLEX CINELEISURE</h3>
+          8 Grange Road<br>
+          Levels 4, 5 &amp; 6, Cathay Cineleisure<br>
+          Singapore 239695
+          <br>
+          </div>
+          </div>
+        <div class="item">
+          <div class="thumb">
+            <a
+              class="popup-gmaps"
+              target="_blank"
+              rel="nofollow"
+              href="https://maps.google.com/maps?q=80+Marine+Parade+Rd,+Parkway+Parade,+Singapore+449269"
+              ><img src="img/parkway-parade.jpg"
+            /></a>
+          </div>
+          <div class="description">
+            <p class="cinema-name">
+              <h3>EL @ Parkway Parade</h3>
+            </p>
+            80 Marine Parade Road<br />
+            Level 7, Parkway Parade<br />
+            Singapore 449269<br />
+          </div>
+        </div>
+        <div class="item">
+          <div class="thumb"><a class="popup-gmaps" target="_blank" rel="nofollow" href="https://maps.google.com/maps?q=1+Pasir+Ris+Close,+E!Hub,+Singapore+569933"><img src="img/downtown-east.jpg"></a></div>
+          <div id="clear"></div>
+          <div class="description">
+          <p class="cinema-name"><h3>EL @ Downtown East</h3>
+          1 Pasir Ris Close<br>
+          Level 4, E!Hub<br>
+          Singapore 519599
+          <br>
+          </p>
+          </div>
+        </div>
+      </div>
+      <div class="btm-container">
+        <form action="movies.php">
+          <input type="submit" value="Book with us now!" />
+        </form>
+        <form action="booking.php">
+          <input type="submit" value="Search your booking" />
+        </form>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <ul class="list">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="movies.php">Movies</a>
+      </li>
+      <li>
+        <a href="login.html">Login</a>
+      </li>
+    </ul>
+    <p class="copyright">EL Cinema &copy; 2022</p>
+  </footer>
+</html>

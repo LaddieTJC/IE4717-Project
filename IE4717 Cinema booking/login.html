@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EL Cinema</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        height: 100vh;
+      }
+      .container {
+        height: 78vh;
+      }
+      .form-container {
+        font-family: "Courier New", Courier, monospace;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+      }
+      .form-container label {
+        margin-top: 7px;
+      }
+      input[type="text"] {
+        margin: 5px 0px 5px 0px;
+        padding: 5px;
+        width: 100%;
+      }
+      input[type="password"] {
+        margin: 5px 0px 25px 0px;
+        width: 100%;
+        padding: 5px;
+      }
+      input[type="submit"] {
+        padding: 5px;
+        width: 216px;
+        margin-top: 15px;
+        border-radius: 30px;
+        background-color: #222831;
+        color: #ffffff;
+        font-size: 1.05rem;
+      }
+      input[type="submit"]:hover {
+        background-color: #b2b2b2;
+        color: #222831;
+      }
+      #frmLogin {
+        width: 200px;
+        font-size: 1.6rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.php">Movies</a></li>
+        <li><a href="booking.php">Booking</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="form-container">
+        <form
+          action="loginValidation.php"
+          method="post"
+          id="frmLogin"
+          onsubmit="return validate();"
+        >
+          <label for="username">Username:</label> <br />
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Enter username"
+          /><br />
+          <label for="password">Password:</label> <br />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter password"
+          /><br />
+          <input type="submit" name="login" value="Login" /> <br />
+          <label for="" id="output"></label>
+        </form>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <ul class="list">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="movies.php">Movies</a>
+      </li>
+      <li>
+        <a href="login.html">Login</a>
+      </li>
+    </ul>
+    <p class="copyright">EL Cinema &copy; 2022</p>
+  </footer>
+  <script>
+    function validate() {
+      var $valid = true;
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      if (username == "") {
+        document.getElementById("output").textContent =
+          "Please enter your username";
+        $valid = false;
+      }
+      if (password == "") {
+        document.getElementById("output").textContent =
+          "Please enter your password";
+        $valid = false;
+      }
+      return $valid;
+    }
+  </script>
+</html>
